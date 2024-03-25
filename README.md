@@ -6,4 +6,4 @@ Recenzii și evaluări ale cărților
 Sortare carti in functie de categorii
 Tehnologii utilizate
 DigitalLibrary este construita folosind tehnologii moderne de dezvoltare web, incluzând HTML, CSS pentru interfața utilizatorului și un backend PHP.
-Baza de date care include ( cate exemple Tabel carte editura, Tabel categorie carti, Tabel autor, Tabel cititor)
+Baza de date care include ( cateva exemple Tabel carte editura, Tabel categorie carti, Tabel autor, Tabel cititor)
