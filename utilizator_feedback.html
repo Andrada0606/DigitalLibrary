@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <title>Comenzile mele</title>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li><h1 style="margin: 0;"><a href="#">DigitalLibrary</a></h1></li>
+            </ul>
+        </div>
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li><a href="acasa.html">Acasă</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Despre.html">Despre</a></li>
+            </ul>
+        </div>
+    </div>
+    
+        <div class="top-bar-right" style="float: right;">
+            <a class="button success" href="#">Nume</a>
+            <a class="button success" href="index.html">Logout</a>
+    
+            <a href="comanda-finalizata.html" class="fas fa-shopping-cart" style="line-height: 3;"></a>
+        </div>
+    
+        <div style="clear: both;"></div>
+    </div>
+    
+    
+    <div class="top-bar">
+    
+        <div class="top-bar-right"  style="display: block; margin-left: auto; margin-right: auto;">
+            <ul class="menu">
+                <li><a href="acasa.html">Acasă</a></li>
+                <li><a href="comenzi_utilizator.html">Comenziile mele</a></li>
+                <li><a href="client_feedback.html"> Feedback</a></li>
+    
+                <li><a href="lista_de_dorinte.html">Lista de dorinte</a></li>
+    
+    
+            </ul>
+        </div>
+    </div>
+    <div class="feedback-container">
+        <form action="/submit-feedback" method="post">
+            <div class="rating">
+                <p><strong>Evaluează Produsul:</strong></p>
+                <label for="star1">Nesatisfăcător</label>
+                <input type="radio" id="star1" name="rating" value="1" /><br>
+                <label for="star2">Satisfăcător</label>
+                <input type="radio" id="star2" name="rating" value="2" /><br>
+                <label for="star3">Bine</label>
+                <input type="radio" id="star3" name="rating" value="3" /><br>
+                <label for="star4">Foarte bine</label>
+                <input type="radio" id="star4" name="rating" value="4" /><br>
+                <label for="star5">Excepțional</label>
+                <input type="radio" id="star5" name="rating" value="5" />
+            </div>
+            <div class="feedback">
+                <label for="feedback-text">Explică-ți alegerea (opțional):</label>
+                <textarea id="feedback-text" name="feedback" rows="4" placeholder="Scrie aici..."></textarea>
+            </div>
+            <div class="submit">
+    
+            </div>
+        </form><a href="review_trimis.html"><button>Trimite review</button></a>
+    </div>
+    
+    
+    <br><br>
+    
+    </body>
+    </html>
