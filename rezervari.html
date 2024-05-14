@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li><h1 style="margin: 0;"><a href="#">DigitalLibrary</a></h1></li>
+            </ul>
+        </div>
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li><a href="index.html">Acasă</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Despre.html">Despre</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="top-bar" style="background-color: white;">
+        <div class="top-bar-right" style="float: right;">
+            <a class="button success" href="index.html">Logout</a>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="top-bar">
+        <div class="top-bar-right" style="display: block; margin-left: auto; margin-right: auto;">
+          <ul class="menu">
+                <li><a href="administrator.html">Imprumuturi</a></li>
+                <li><a href="rezervari.html">Rezervari</a></li>
+                <li><a href="utilizatori.html">Utilizatori</a></li>
+                <li><a href="admin_rapoarte.html"> Rapoarte</a></li>
+            </ul>
+        </div>
+    </div>
+<body>
+    <h1>Rezervări în curs</h1>
+    <form action="procesare.php" method="post">
+        <table>
+            <thead>
+                <tr>
+                
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>789012</td>
+                    <td>Rural Hours</td>
+                    <td>Dan Ana</td>
+                    <td>2024-04-20</td>
+                    <td>În așteptare</td>
+                    <td>
+                        <button class="process-button" type="submit" name="process-button">Procesare</button>
+                        <button class="cancel-button" type="submit" name="cancel-button">Anulare</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>789020</td>
+                    <td>Danse Macabre</td>
+                    <td>Pop Alin</td>
+                    <td>2024-04-20</td>
+                    <td>În așteptare</td>
+                    <td>
+                        <button class="process-button" type="submit" name="process-button">Procesare</button>
+                        <button class="cancel-button" type="submit" name="cancel-button">Anulare</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
