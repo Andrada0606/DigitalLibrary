@@ -72,16 +72,16 @@
   border-radius: 25px;
 }
 .tabcontent {
-  background-color: white; /* Setează culoarea de fundal la alb */
+  background-color: white;
   padding: 20px; /* Adaugă un spațiu de padding în jurul conținutului */
   margin-bottom: 20px; /* Adaugă un spațiu între taburi */
 }
 button {
-  background-color: lightseagreen; /* Setează culoarea de fundal la verde */
+  background-color: lightseagreen; 
   color: white; /* Setează culoarea textului la alb */
   border: none; /* Elimină bordura butonului */
    padding: 10px 20px; 
-  cursor: pointer; /* Transformă cursorul la interacțiune */
+  cursor: pointer;
   border-radius: 5px; /* Adaugă un efect rotund butonului */
 }
 h1 {
