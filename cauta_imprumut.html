@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li><h1 style="margin: 0;"><a href="#">DigitalLibrary</a></h1></li>
+            </ul>
+        </div>
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li><a href="acasa.html">Acasă</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Despre.html">Despre</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="top-bar" style="background-color: white;">
+        <div class="top-bar-right" style="float: right;">
+            <a class="button success" href="index.html">Logout</a>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="top-bar">
+        <div class="top-bar-right" style="display: block; margin-left: auto; margin-right: auto;">
+            <ul class="menu">
+                <li><a href="imprumuturi.html">Imprumuturi</a></li>
+                <li><a href="rezervari.html">Rezervari</a></li>
+                <li><a href="utilizatori.html">Utilizatori</a></li>
+                <li><a href="admin_rapoarte.html"> Rapoarte</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<h2>Cautare imprumut</h2>
+
+<form method="post" action="cauta_imprumut.php">  
+
+<div class="row">
+  <div class="large-8 medium-8 small-12 columns">
+    Cod Tranzactie: <input type="text" name="cod_tranzactie" >
+  </div>
+ 
+  <div class="large-8 medium-8 small-8 columns">
+    <button type="submit" class="success button" name="submit">Cauta</button>
+  </div>
+</div>
+
+</form>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
