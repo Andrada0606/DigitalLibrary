@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <title>Cauta comanda</title>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li><h1 style="margin: 0;"><a href="#">DigitalLibrary</a></h1></li>
+            </ul>
+        </div>
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li><a href="acasa.html">Acasă</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Despre.html">Despre</a></li>
+            </ul>
+        </div>
+    </div>
+    
+        <div class="top-bar-right" style="float: right;">
+            <a class="button success" href="#">Nume</a>
+            <a class="button success" href="index.html">Logout</a>
+    
+            <a href="comanda-finalizata.html" class="fas fa-shopping-cart" style="line-height: 3;"></a>
+        </div>
+    
+        <div style="clear: both;"></div>
+    </div>
+    
+    
+    <div class="top-bar">
+    
+        <div class="top-bar-right"  style="display: block; margin-left: auto; margin-right: auto;">
+            <ul class="menu">
+                <li><a href="utilizator.html">Acasă</a></li>
+                <li><a href="comenzi_utilizator.html">Comenziile mele</a></li>
+                <li><a href="utilizator_feedback.html"> Feedback</a></li>
+    
+                <li><a href="lista_de_dorinte.html">Lista de dorinte</a></li>
+    
+    
+            </ul>
+        </div>
+    </div>
+<body>
+    <form action="cauta_comanda.php" method="post">
+        <label for="search_term">Introduceți numarul comenzii:</label>
+        <input type="text" id="search_term" name="search_term" required>
+        <button type="submit" name="search">Caută</button>
+    </form>
+</body>
+</html>
