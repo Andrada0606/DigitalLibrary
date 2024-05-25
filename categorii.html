@@ -10,17 +10,6 @@
 </head>
 
 <body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
     <div class="top-bar">
         <div class="top-bar-left">
             <ul class="menu">
@@ -60,22 +49,23 @@
 
     <br><br>
 
-    <div class="top-bar-center">
+    <!-- <div class="top-bar-center">
         <ul class="menu">
             <li><input type="search" placeholder="Search"></li>
             <li><a href="search.php"><button type="button" class="button">Search</button></a></li>
         </ul>
-    </div>
+    </div> -->
+    <form method="post" action="cauta_categorie.php">  
 
-<div class="container">
-    <h1>Categorii de cărți</h1>
-    <a href="#" class="category">Fiction</a>
-    <a href="#" class="category">Non-Fiction</a>
-    <a href="#" class="category">Children</a>
-    <a href="#" class="category">Romance</a>
-    <a href="#" class="category">Thriller</a>
-    <a href="#" class="category">Psychology</a>
-</div>
+        <div class="row">
+          <div class="large-8 medium-8 small-12 columns">
+            Categorie: <input type="text" name="categorie" >
+          </div>
+         
+          <div class="large-8 medium-8 small-8 columns">
+            <button type="submit" class="success button" name="submit">Cauta</button>
+          </div>
+        </div>
 
 </body>
 </html>
