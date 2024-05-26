@@ -96,7 +96,7 @@ if (empty($_POST["cod_tranzactie"])) {
 ?>
 
 <br>
-<a href="administrator.html" class="button">Inapoi</a>
+<a href="imprumuturi.html" class="button">Inapoi</a>
 
 <script src="js/vendor/jquery.js"></script>
 <script src="js/vendor/what-input.js"></script>
