@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <title>Gestionare Utilizatori</title>
+</head>
+<body>
+    <body>
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <ul class="menu">
+                    <li><h1 style="margin: 0;"><a href="#">DigitalLibrary</a></h1></li>
+                </ul>
+            </div>
+            <div class="top-bar-left">
+                <ul class="menu">
+                    <li><a href="acasa.html">Acasă</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Despre.html">Despre</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="top-bar" style="background-color: white;">
+            <div class="top-bar-right" style="float: right;">
+                <a class="button success" href="index.html">Logout</a>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    
+        <div class="top-bar">
+            <div class="top-bar-right" style="display: block; margin-left: auto; margin-right: auto;">
+                <ul class="menu">
+                    <li><a href="imprumuturi.html">Imprumuturi</a></li>
+                    <li><a href="rezervari.html">Rezervari</a></li>
+                    <li><a href="utilizatori.html">Utilizatori</a></li>
+                    <li><a href="admin_rapoarte.html"> Rapoarte</a></li>
+                </ul>
+            </div>
+        </div>
+<body>
+    <h2>Update Utilizator</h2>
+    <form method="post" action="update_utilizator.php">
+        <label for="id_utilizator">ID Utilizator:</label>
+        <input type="text" id="id_utilizator" name="id_utilizator" required><br><br>
+        <button type="submit">Update Utilizator</button>
+    </form>
+</body>
+</html>
