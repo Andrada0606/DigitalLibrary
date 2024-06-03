@@ -3,54 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/foundation.css">
+    <title>Acasa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.3/css/foundation.min.css">
     <link rel="stylesheet" href="css/app.css">
-
-    <title>Comenzile mele</title>
+    <style>
+        /* Stiluri suplimentare pentru a extinde bara de meniu și containerul de feedback pe întreaga pagină */
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex: 1;
+        }
+        .feedback-container {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f9; /* Schimbă culoarea de fundal după nevoie */
+        }
+        /* Restul stilurilor rămân neschimbate */
+    </style>
 </head>
-<body>
-    <div class="top-bar">
-        <div class="top-bar-left">
-            <ul class="menu">
-                <li><h1 style="margin: 0;"><a href="#">DigitalLibrary</a></h1></li>
-            </ul>
-        </div>
-        <div class="top-bar-left">
-            <ul class="menu">
-                <li><a href="acasa.html">Acasă</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Despre.html">Despre</a></li>
-            </ul>
-        </div>
+<div class="top-bar">
+    <div class="top-bar-left">
+        <ul class="menu">
+            <li><h1 style="margin: 0;"><a href="#">DigitalLibrary</a></h1></li>
+        </ul>
     </div>
-    
-        <div class="top-bar-right" style="float: right;">
-            <a class="button success" href="#">Nume</a>
-            <a class="button success" href="index.html">Logout</a>
-    
-            <a href="comanda-finalizata.html" class="fas fa-shopping-cart" style="line-height: 3;"></a>
-        </div>
-    
-        <div style="clear: both;"></div>
+    <div class="top-bar-left">
+        <ul class="menu">
+            <li><a href="utilizator.html">Acasă</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Despre.html">Despre</a></li>
+        </ul>
     </div>
-    
-    
-    <div class="top-bar">
-    
-        <div class="top-bar-right"  style="display: block; margin-left: auto; margin-right: auto;">
-            <ul class="menu">
-                <li><a href="acasa.html">Acasă</a></li>
-                <li><a href="comenzi_utilizator.html">Comenziile mele</a></li>
-                <li><a href="client_feedback.html"> Feedback</a></li>
-    
-                <li><a href="lista_de_dorinte.html">Lista de dorinte</a></li>
-    
-    
-            </ul>
-        </div>
-    </div>
+</div>
+   <div class="top-bar-right" style="float: right;">
+    <a class="button success" href="#">Nume</a>
+    <a class="button success" href="index.html">Logout</a>
+
+</div>
+
+<div style="clear: both;"></div>
+</div>
+
+
+<div class="top-bar">
+
+<div class="top-bar-right"  style="display: block; margin-left: auto; margin-right: auto;">
+    <ul class="menu">
+        <li><a href="utilizator.php">Acasă</a></li>
+        <li><a href="comenzi_utilizator.html">Comenziile mele</a></li>
+        <li><a href="utilizator_feedback.html"> Feedback</a></li>
+
+        <li><a href="lista_de_dorinte.html">Lista de dorinte</a></li>
+
+    </ul>
+</div>
+</div>
+
     <div class="feedback-container">
-        <form action="/submit-feedback" method="post">
+        <form id="feedback-form" action="/feedback_trimis.html" method="post">
             <div class="rating">
                 <p><strong>Evaluează Produsul:</strong></p>
                 <label for="star1">Nesatisfăcător</label>
@@ -67,15 +88,33 @@
             <div class="feedback">
                 <label for="feedback-text">Explică-ți alegerea (opțional):</label>
                 <textarea id="feedback-text" name="feedback" rows="4" placeholder="Scrie aici..."></textarea>
+                <p id="feedback-error" style="color: red;"></p>
             </div>
-            <div class="submit">
-    
-            </div>
-        </form><a href="review_trimis.html"><button>Trimite review</button></a>
+            <button type="submit" id="submit-button">Trimite review</button>
+        </form>
     </div>
-    
-    
-    <br><br>
-    
-    </body>
-    </html>
+
+    <!-- Cod JavaScript -->
+    <script>
+        document.getElementById('feedback-text').addEventListener('input', function(event) {
+            var feedback = event.target.value;
+            if (feedback.length < 10) {
+                document.getElementById('feedback-error').innerText = 'Feedback-ul trebuie să conțină cel puțin 20 caractere.';
+            } else {
+                 // Dacă feedback-ul introdus de utilizator este valid, șterge orice mesaj de eroare anterior afișat
+                document.getElementById('feedback-error').innerText = '';
+}
+
+        });
+
+        document.getElementById('submit-button').addEventListener('mouseover', function(event) {
+            event.target.style.backgroundColor = 'blue';
+            event.target.style.transition = 'background-color 0.3s ease';
+        });
+
+        document.getElementById('submit-button').addEventListener('mouseout', function(event) {
+            event.target.style.backgroundColor = 'initial';
+        });
+    </script>
+</body>
+</html>
